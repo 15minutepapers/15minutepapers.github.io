@@ -1,12 +1,10 @@
 ---
-layout: archive
+layout: single
+permalink: /episodes/
+author_profile: false
 ---
 
-
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
+<h1>Previous Episodes</h1>
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
@@ -15,7 +13,7 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts limit:2 %}
+  {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>

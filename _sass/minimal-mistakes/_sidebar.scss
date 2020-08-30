@@ -119,6 +119,7 @@
   vertical-align: top;
   width: 36px;
   height: 36px;
+  padding: 5%;
 
   @include breakpoint($large) {
     display: block;
@@ -172,6 +173,7 @@
 
 .author__bio {
   margin: 0;
+  font-size: $type-size-8; // i added this
 
   @include breakpoint($large) {
     margin-top: 10px;
