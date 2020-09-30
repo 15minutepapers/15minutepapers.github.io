@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 title                    : "15 Minute Papers"
-title_separator          : "="
+title_separator          : " "
 subtitle                 : "a journal club for those short on time and brain cells" # site tagline that appears below site title in masthead
 name                     : "15 Minute Papers"
 description              : "a journal club for those short on time and brain cell"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://15minutepapers.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -219,6 +219,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-sitemap
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -265,6 +266,9 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  posts:
+    permalink: /episodes/:title
 
 # Defaults
 defaults:
