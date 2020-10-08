@@ -256,6 +256,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-include-cache
+  jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH
