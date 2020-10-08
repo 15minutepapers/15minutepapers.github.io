@@ -5,4 +5,4 @@ author_profile: true
 ---
 
 
-Welcome to 15 minute podcasts! 
+Welcome to 15 minute papers! 

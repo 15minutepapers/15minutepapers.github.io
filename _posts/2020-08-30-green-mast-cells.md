@@ -1,5 +1,6 @@
 ---
 title:  "Hurting from a boo-boo? Blame Mrgpr2!"
+excerpt: "Postdoc Dustin Green joins us to discuss the role of a mast cell receptor in pain"
 ---
 
 <h4>Our fun aside for this week is Cre-Lox recombination! And no, this has nothing to do with smoked salmon.</h4>
