@@ -5,13 +5,35 @@ excerpt: "Postdoc Dustin Green joins us to discuss the role of a mast cell recep
 
 <h4>Our fun aside for this week is Cre-Lox recombination! And no, this has nothing to do with smoked salmon.</h4>
 
-Suppose you'd like to target a cell population based on a protein it expresses (think Mrgpr2). Maybe you want to make those cells susceptible to a diptheria toxin so you can wipe them out of your mouse, or maybe you just want to fluorescently label them. The Cre-Lox handles this problem by specifically modifying the DNA of cells that have used a certain promoter to express a gene of interest.
+Suppose you’d like to target a cell population based on a protein it expresses (think Mrgpr2). Maybe you want to make those cells susceptible to a toxin so you can wipe them out of your mouse. Maybe you just want to fluorescently label them. The Cre-Lox system handles this problem by exploiting the same promoter as your gene of interest.
+When a mouse is bred to have a Cre-protein that is controlled by the same promoter as your gene of interest, Cre will be expressed whenever your gene of interest is expressed. What makes Cre special is that it chops out DNA between sequences of loxP sites. This DNA will only be cut out if there are two loxP sites flanking the region (the fancy scientists call this a “floxed” gene). Usually you order mice with the region you want cut out already floxed, but if you hate yourself you can genetically engineer this on your own.
 
-When a mouse is bred to have a Cre-protein that is controlled under the same promoter as your gene of interest, Cre will be expressed whenever you gene of interest is expressed. What makes Cre special is that it chops out DNA between sequences of loxP sites. In the picture below, a mouse is bred to have Cre under the same promoter of a blue gene and a green gene. When some cell in thise mouse begins to try expressing the blue gene, Cre will get expressed and cut out the blue gene from that cell's genome, as it lies between two loxP sites. This cell and all of its descendants will never be able to produce the blue gene again. It is important that this process is localized to cells that express this blue gene, meaning Cre will not act unless a cell has tried to express the blue gene.
+In the picture below, a mouse is bred to have Cre under the same promoter of a floxed gene (blue) and a reporter gene (green). When some cell in this mouse tries expressing the floxed gene, Cre will be expressed and cut this gene out. This cell and all of its descendants will never be able to produce the floxed protein again. It is important that this process is localized only to cells that have tried expressing the floxed gene.
+
 
 <figure>
   <img src="/assets/images/post_images/CreLoxP_experiment.png" style="width:100%">
   <figcaption>Image by Matthias Zepper.</figcaption>
 </figure>
 
-The other important piece of this system is the green gene that now gets expressed after the blue has been excised. This gene can simply encode a fluorescent protein that will glow a specific color to allow you to visualize where cells that tried expressing your blue gene are located. If you want to use Cre-Lox to wipe out these cells instead, you can make this green gene a protein, not seen on any other cell, that binds a specific toxin. Cells that have tried expressing the blue gene will then become the only cells in the mouse sensitive to this toxin, and can be wiped out by administering the toxin to the mouse. 
+After the floxed gene (blue) has been excised, your reporter gene (green) is now expressed. This gene could encode a fluorescent protein that allows you to visualize cells in which the floxed gene was removed. Or, the reporter protein could bind a toxin that selectively kills cells of interest. Once you inject the toxin into your mouse, any cell that had its floxed gene removed  will be wiped out, and the rest will be unharmed.
+
+<h4>Definitions (for those of us who really didn’t understand)</h4>
+
+**Mast Cell:** Innate immune cells that are typically talked about in terms of allergies. They respond to foreign substances from the environment and signal other immune cells to enact an immune response (and in this case, also a nervous system response). 
+
+**Mas-related G protein coupled receptors (Mrgprs):** G protein coupled receptors (GPCRs) are a class of receptors on cell surfaces that, when stimulated with their ligand, activate a signalling pathway inside the cell. Mrgprs are a family of GPCRs that are found on peripheral sensory neurons and mast cells. In this paper, the Mrgb2 receptor is responsible for activating mast cells to release cytokines 
+
+**Peripheral sensory neurons:** All the neurons in our body that aren’t in the spinal cord or brain that sense outside stimuli rather than doing what the brain tells them to. Those would be peripheral motor neurons.
+
+**Mechanical and thermal hyperalgesia:** Atypical increased sensitivity to pain (mechanical → poking stimulus; thermal → heat stimulus). This is caused by neurogenic inflammation.
+
+**Neurogenic inflammation:** The release of cytokines and recruitment of immune initiated by neurons.
+
+**Substance P (SP):** A peptide that binds to receptors on immune cells to regulate their inflammatory response. In the context of this paper, it’s the peptide released by neurons that binds the Mrgb2 receptor on mast cells to start the inflammation.
+
+**NK-1R:** We didn’t talk about it much, but this was the most studied receptor that SP binds to; it was incorrectly thought to be the receptor that initiates the pain response. A lot of the reviewers of the paper were interested in the fact that SP wasn’t actually binding to this receptor during the pain response. 
+
+**Cytokines/chemokines:** chemical messengers that signal for other cells to be activated and/or to migrate towards the damaged tissue.
+
+**CCL2/CCL3:** Cytokines that affect neuronal inflammation. Dustin saw low levels of this cytokine in the knockout mice, which implied that the release of CCL2/CCL3 by mast cells is what recruits other immune cells in the pain response.
