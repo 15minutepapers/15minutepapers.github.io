@@ -10,12 +10,6 @@
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
-      {% if s.keyterms %}
-        <h3 style="margin-bottom:10px">Key Terms</h3><h5 style="margin-top:0;margin-bottom:10px">(for those of us who really didn’t understand)</h5>
-        {% for x in s.keyterms %}
-          <h7 style="margin-top:0px;margin-bottom:0"><u><b>{{ x.term }}:</b></u></h7><p style="margin-top:0;margin-bottom:10px;">{{ x.defn }}</p>
-        {% endfor %}
-      {% endif %}
     {% endfor %}
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}

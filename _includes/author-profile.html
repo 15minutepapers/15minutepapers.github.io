@@ -22,7 +22,6 @@
     </div>
   </div>
 
-</div>
 
 <!-- Their code -->
   {% if author.avatar %}
@@ -51,7 +50,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <!-- <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button> -->
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
@@ -270,5 +269,5 @@
 
       {% include author-profile-custom-links.html %}
     </ul>
-  </div> 
-
+  </div>
+</div>
