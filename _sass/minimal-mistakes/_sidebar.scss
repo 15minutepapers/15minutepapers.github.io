@@ -7,7 +7,9 @@
    ========================================================================== */
 
 .sidebar {
+
   @include clearfix();
+  clear: none;
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */
   //   position: relative;
@@ -15,10 +17,11 @@
   //   -webkit-transform: translate3d(0, 0, 0);
   //   transform: translate3d(0, 0, 0);
   // }
-
+  
   @include breakpoint($large) {
-    float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    float: right;
+    padding-right: 10px;
+    width: calc(#{$left-sidebar-width-narrow});// width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
@@ -37,7 +40,8 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    padding-right: 10px;
+    width: calc(#{$left-sidebar-width} - 1em);
   }
 
   > * {
