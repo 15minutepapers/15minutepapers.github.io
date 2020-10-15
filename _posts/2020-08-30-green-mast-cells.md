@@ -31,6 +31,7 @@ sidebar:
 
 
 ---
+<iframe src="https://open.spotify.com/embed-podcast/episode/6PozmziDzbMw6e6AyJSwwR" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 <h4>Our fun aside for this week is Cre-Lox recombination! And no, this has nothing to do with smoked salmon.</h4>
 

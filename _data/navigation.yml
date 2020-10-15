@@ -4,8 +4,8 @@ main:
     url: /
   - title: "Episodes"
     url: /episodes/
-  - title: "Our Team"
-    url: /our_team/
+  # - title: "Our Team"
+  #   url: /our_team/
   - title: "Contact"
     url: /contact/
   # - title: "Sample Posts"
