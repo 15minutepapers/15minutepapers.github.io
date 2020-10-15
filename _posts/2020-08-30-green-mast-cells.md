@@ -1,5 +1,5 @@
 ---
-title:  "Hurting from a boo-boo? Blame Mrgpr2!"
+title:  "Hurting from a boo-boo? Blame Mrgprb2!"
 excerpt: "Postdoc Dustin Green joins us to discuss the role of a mast cell receptor in pain"
 sidebar:
   - keyterms:
